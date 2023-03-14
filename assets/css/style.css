@@ -1,0 +1,46 @@
+.debug{
+  /* debug */
+  /* height: 70px; */
+  border: 1px solid black;
+  background-color: rgba(165, 42, 42, 0.226);
+}
+
+:root{
+  --celeste: #1b72e8;
+  --height-header: 60px;
+}
+
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: var(--height-header);
+}
+
+main{
+  height: calc(100vh - var(--height-header));
+  margin-top: var(--height-header);
+  display: flex;
+}
+
+main aside{
+  flex-shrink: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #051e34;
+  background-image: url(../img/sidebar-bg.png);
+}
+
+.ac-container{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+
+
+
+/* per la sidebar laterale che abbare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ */
