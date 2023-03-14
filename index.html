@@ -18,12 +18,45 @@
   
   <header>
     <!-- alla grandezza desktop il logo diventa grande  -->
-    <!-- cercare il Dropdowns su bootstrap  -->
-    <nav class="navbar navbar-light bg-light">
+    <!-- PROBLEMA:
+    l'img mobile sposta l'altezza della nav
+    la search bar centrale non si allunga
+    la campanella fa uscire il dropmenu fuori  -->
+  
+    <nav class="navbar navbar-light bg-white h-100">
+
       <div class="container-fluid">
+        
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.svg" alt="" width="" height="">
+          <img src="assets/img/logo.svg" class="d-none d-md-block">
+          <div class="logo">
+            <img src="assets/img/mobile-logo.png" class="img-fluid d-md-none">
+          </div>
         </a>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+        </form>
+
+        <div class="ac_icons d-none d-md-block text-muted">
+
+          <i class="mx-1 fa-solid fa-bars"></i>
+          <i class="mx-1 fa-solid fa-circle-question"></i>
+          <i class="mx-1 fa-solid fa-ellipsis-vertical"></i>
+          
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn px-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <i class="mx-1 text-warning fa-solid fa-bell"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end">
+            <li><button class="dropdown-item" type="button">Profilo</button></li>
+            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+            <li><button class="dropdown-item" type="button">Logout</button></li>
+          </ul>
+        </div>
+
       </div>
     </nav>
 
@@ -31,24 +64,24 @@
 
   <main>
 
-    <aside>
+    <aside> <!-- MODIFICARE PADDING INTERNO PER ALLINEARE TUTTO -->
       <div class="container-fluid">
         <div class="row flex-column text-white">
           <div class="col">
             <i class="fa-solid fa-house"></i>
-            <span>Home</span>
+            <span class="d-none d-md-inline-block">Home</span>
           </div>
           <div class="col">
             <i class="fa-solid fa-chart-simple"></i>
-            <span>Stats</span>            
+            <span class="d-none d-md-inline-block">Stats</span>            
           </div>
           <div class="col">
             <i class="fa-solid fa-signal"></i>
-            <span>Signals</span>            
+            <span class="d-none d-md-inline-block">Signals</span>            
           </div>
           <div class="col d-flex fondo">
             <i class="fa-solid fa-gear"></i>
-            <span>Admin</span>
+            <span class="d-none d-md-inline-block">Admin</span>
           </div>
         </div>
       </div>
@@ -66,6 +99,7 @@
           <div class="col">
             Studenti
           </div>
+          <!-- per la sidebar laterale che appare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
           <div class="col">
             nuovo studente
           </div>
@@ -75,6 +109,7 @@
         <div class="row righa">
 
           <div class="col-xl-8 debug">
+            <!-- cercare List group su boostrap  -->
 
             <h2>Prossime classi</h2>
             <p>

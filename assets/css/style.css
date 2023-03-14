@@ -59,7 +59,13 @@ main aside{
 
 
 
+/* TABLET  */
+@media all and (max-width:768px){
+  header .logo{
+    width: 45px;
+  }
 
-
-
-/* per la sidebar laterale che appare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ */
+  main aside{
+    width: 50px;
+  }
+}
