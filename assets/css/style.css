@@ -6,7 +6,6 @@
 }
 
 :root{
-  --celeste: #1b72e8;
   --height-header: 60px;
 }
 
@@ -19,25 +18,41 @@ header{
   height: var(--height-header);
 }
 
+/* MAIN  */
+
 main{
   height: calc(100vh - var(--height-header));
   margin-top: var(--height-header);
-  /* display: flex; */
+  display: flex;
 }
 
+/* ASIDE SIDEBAR  */
+
 main aside{
-  /* flex-shrink: 0; */
-  /* width: 150px; */
+  flex-shrink: 0;
+  width: 150px;
   height: 100%;
   background-color: #051e34;
   background-image: url(../img/sidebar-bg.png);
 }
 
+.fondo{
+  /* align-items: flex-end; */
+  /* align-content: flex-end; */
+  /* align-self: flex-end; */
+}
+
+/* CONRAINER CENTRALE  */
+
 .ac-container{
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
-  background-color: brown;
-  /* overflow-y: auto; */
+  overflow-y: auto;
+}
+
+.ac-container .row:first-child{
+  /* debug */
+  height: 100px;
 }
 
 
@@ -46,4 +61,5 @@ main aside{
 
 
 
-/* per la sidebar laterale che abbare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ */
+
+/* per la sidebar laterale che appare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ */

@@ -18,7 +18,8 @@
   
   <header>
     <!-- alla grandezza desktop il logo diventa grande  -->
-    <nav class="navbar navbar-light bg-light debug">
+    <!-- cercare il Dropdowns su bootstrap  -->
+    <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.svg" alt="" width="" height="">
@@ -30,53 +31,131 @@
 
   <main>
 
-    <div class="container-fluid h-100">
-
-      <div class="row h-100">
-
-        <div class="col-2 px-0"> <!-- SIDEBAR  -->
-
-          <aside>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col"></div>
-              </div>
-            </div>
-          </aside>
-
+    <aside>
+      <div class="container-fluid">
+        <div class="row flex-column text-white">
+          <div class="col">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>Stats</span>            
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-signal"></i>
+            <span>Signals</span>            
+          </div>
+          <div class="col d-flex fondo">
+            <i class="fa-solid fa-gear"></i>
+            <span>Admin</span>
+          </div>
         </div>
+      </div>
+    </aside>
 
-        <div class="col-10 px-0"> <!-- CONTAIN -->
+    <div class="ac-container">
 
-          <div class="ac-container">
-            <div class="container-fluid">
-              
-              <div class="row">
-      
-                <div class="col-6">
-                  Boolean
-                </div>
-                <div class="col">
-                  Studenti
-                </div>
-                <div class="col">
-                  nuovo studente
-                </div>
-      
-              </div>
-      
-            </div>
+      <div class="container-fluid">
+        
+        <div class="row text-bg-primary py-3"> <!-- cercare i Badges su bootstrap  -->
+          
+          <div class="col-6 fw-bold">
+            Boolean
+          </div>
+          <div class="col">
+            Studenti
+          </div>
+          <div class="col">
+            nuovo studente
           </div>
 
         </div>
 
+        <div class="row righa">
+
+          <div class="col-xl-8 debug">
+
+            <h2>Prossime classi</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nemo nobis ratione laudantium commodi id cupiditate libero, sit doloremque. Asperiores perspiciatis unde et placeat amet recusandae corrupti nemo voluptate maiores?
+            </p>
+
+            <h2>F.A.Q.</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 debug">
+            
+            <h2>Todo</h2>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="todo1">
+              <label class="form-check-label" for="todo1">
+                Kickoff nuove classi
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="todo2">
+              <label class="form-check-label" for="todo2">
+                Lezione su Bootstrap 5 in classe #75
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="todo3">
+              <label class="form-check-label" for="todo3">
+                controllare username github studenti
+              </label>
+            </div>
+
+            <h2>Utenti attivi</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nemo nobis ratione laudantium commodi id cupiditate libero, sit doloremque. Asperiores perspiciatis unde et placeat amet recusandae corrupti nemo voluptate maiores?
+            </p>
+          </div>
+          
+
+        </div>
+
       </div>
-
     </div>
-
-    
-
-    
 
 
   </main>
