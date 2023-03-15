@@ -35,13 +35,9 @@
         </div>
 
         <!-- NAVBAR  -->
-        <div class="col-10 col-lg-8 h-100 pt-2">
+        <div class="col-10 col-lg-8 d-flex align-self-center">
 
-        <!-- PROBLEMA: la search bar centrale si deve allineare verticalmente -->
-        <!-- soluzione: padding top  -->
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-          </form>
+          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
 
         </div>
 
@@ -81,7 +77,7 @@
 
     <aside>
       
-      <div class="container-fluid">
+      <div class="container-fluid d-flex flex-column justify-content-between h-100">
 
         <div class="row flex-column text-white py-3 px-1">
 
@@ -105,15 +101,15 @@
               <span class="d-none d-lg-inline-block">Signals</span>
             </div>                        
           </div>
+        </div>
 
+        <div class="row text-white py-3 px-1">
           <div class="col align-self-end"> <!-- mandare in fondo --> 
             <div class="selezionato">
               <i class="fa-solid fa-gear"></i>
               <span class="d-none d-lg-inline-block">Admin</span>
             </div>  
-            
           </div>
-
         </div>
 
       </div>
@@ -266,8 +262,8 @@
                 <thead>                  
                   <tr> <!-- RIGA 1 -->                    
                     <td class="w-50">Nome</td>
-                    <td class="d-none d-md-inline-block">Data inizio</td>
-                    <td class="d-none d-md-inline-block">ROI</td>
+                    <td class="d-none d-md-table-cell">Data inizio</td>
+                    <td class="d-none d-md-table-cell">ROI</td>
                     <td>Stato</td>
                     <td>Azioni</td>
                   </tr>
@@ -281,8 +277,162 @@
                       </div>
                       <span>Classe 75</span>
                     </td>
-                    <td class="d-none d-md-inline-block">15 Feb 2021</td>
-                    <td class="d-none d-md-inline-block">20%</td>
+                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success align-middle">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 76</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success align-middle">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 77</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success bg-warning align-middle">process</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 78</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success align-middle">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 79</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success bg-danger align-middle">failed</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 80</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success align-middle">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 81</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success bg-danger align-middle">failed</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 82</span>
+                    </td>
+                    <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
                     <td>
                       <span class="badge text-bg-success align-middle">Done</span>
                     </td>
