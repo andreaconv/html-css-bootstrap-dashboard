@@ -13,6 +13,8 @@
   font-size: 0.7rem;
 }
 
+/* HEADER  */
+
 header{
   position: fixed;
   z-index: 999;
@@ -40,10 +42,9 @@ main aside{
   background-image: url(../img/sidebar-bg.png);
 }
 
-.fondo{
-  /* align-items: flex-end; */
-  /* align-content: flex-end; */
-  /* align-self: flex-end; */
+main aside .selezionato:hover{
+  background-color: gray;
+  cursor: pointer;
 }
 
 /* CONRAINER CENTRALE  */

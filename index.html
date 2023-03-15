@@ -17,13 +17,13 @@
 <body>
   
   <header>
-    <!-- PROBLEMA: la search bar centrale si deve allineare verticalmente -->
 
     <div class="container-fluid h-100">
 
       <div class="row h-100">
 
-        <div class="col-1 col-lg-2 h-100 px-0 py-2 py-lg-3 px-lg-2">
+        <!-- LOGO  -->
+        <div class="col-1 col-lg-2 h-100 px-0 py-2 py-lg-3 px-lg-2 ps-1">
 
           <a class="navbar-brand" href="#">
             <img src="assets/img/logo.svg" class="d-none d-lg-block">
@@ -34,15 +34,18 @@
 
         </div>
 
-        <div class="col-10 col-lg-8 h-100">
+        <!-- NAVBAR  -->
+        <div class="col-10 col-lg-8 h-100 pt-2">
 
+        <!-- PROBLEMA: la search bar centrale si deve allineare verticalmente -->
+        <!-- soluzione: padding top  -->
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
           </form>
 
         </div>
 
-
+        <!-- ICONE  -->
         <div class="col-1 col-lg-2 d-flex justify-content-end h-100">
 
           <div class="ac_icons d-none d-lg-block text-muted py-3">
@@ -76,28 +79,45 @@
 
   <main>
 
-    <aside> <!-- MODIFICARE PADDING VERTICALE PER ALLINEARE TUTTO -->
+    <aside>
+      
       <div class="container-fluid">
-        <div class="row flex-column text-white">
+
+        <div class="row flex-column text-white py-3 px-1">
+
           <div class="col">
-            <i class="fa-solid fa-house"></i>
-            <span class="d-none d-lg-inline-block">Home</span>
-          </div>
+            <div class="selezionato">
+              <i class="fa-solid fa-house me-1"></i>
+              <span class="d-none d-lg-inline-block">Home</span>
+            </div>            
+          </div>       
+
           <div class="col">
-            <i class="fa-solid fa-chart-simple"></i>
-            <span class="d-none d-lg-inline-block">Stats</span>            
+            <div class="selezionato">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="d-none d-lg-inline-block">Stats</span>  
+            </div>                     
           </div>
+
           <div class="col">
-            <i class="fa-solid fa-signal"></i>
-            <span class="d-none d-lg-inline-block">Signals</span>            
+            <div class="selezionato">
+              <i class="fa-solid fa-signal"></i>
+              <span class="d-none d-lg-inline-block">Signals</span>
+            </div>                        
           </div>
-          <div class="col d-flex fondo"> <!-- mandare in fondo -->   
-            <!-- allineare verticalmente  -->
-            <i class="fa-solid fa-gear"></i>
-            <span class="d-none d-lg-inline-block">Admin</span>
+
+          <div class="col align-self-end"> <!-- mandare in fondo --> 
+            <div class="selezionato">
+              <i class="fa-solid fa-gear"></i>
+              <span class="d-none d-lg-inline-block">Admin</span>
+            </div>  
+            
           </div>
+
         </div>
+
       </div>
+
     </aside>
 
     <div class="ac-container">
@@ -307,7 +327,7 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni totam quasi debitis nam, libero suscipit? Voluptatem consequatur odio doloremque similique quo ducimus ratione, nulla, aut adipisci enim voluptatibus soluta possimus.
+                      Clicca sull'icona della campanella
                     </div>
                   </div>
                 </div>
