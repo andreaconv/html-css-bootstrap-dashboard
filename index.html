@@ -13,13 +13,11 @@
   <title>Dashboard</title>
 </head>
 
-<!-- 2 breakpoint: md(tablet) e xl(desktop) -->
+<!-- 2 breakpoint: md(tablet) e lg(desktop) -->
 <body>
   
   <header>
-    <!-- PROBLEMA:
-    la search bar centrale si deve allineare verticalmente
-    la campanella fa uscire il dropmenu fuori sulla destra -->
+    <!-- PROBLEMA: la search bar centrale si deve allineare verticalmente -->
 
     <div class="container-fluid h-100">
 
@@ -78,7 +76,7 @@
 
   <main>
 
-    <aside> <!-- MODIFICARE PADDING INTERNO PER ALLINEARE TUTTO -->
+    <aside> <!-- MODIFICARE PADDING VERTICALE PER ALLINEARE TUTTO -->
       <div class="container-fluid">
         <div class="row flex-column text-white">
           <div class="col">
@@ -93,7 +91,8 @@
             <i class="fa-solid fa-signal"></i>
             <span class="d-none d-lg-inline-block">Signals</span>            
           </div>
-          <div class="col d-flex fondo"> <!-- mandare in fondo -->            
+          <div class="col d-flex fondo"> <!-- mandare in fondo -->   
+            <!-- allineare verticalmente  -->
             <i class="fa-solid fa-gear"></i>
             <span class="d-none d-lg-inline-block">Admin</span>
           </div>
@@ -105,22 +104,130 @@
 
       <div class="container-fluid">
         
-        <div class="row text-bg-primary py-3"> <!-- cercare i Badges su bootstrap  -->
+        <div class="row text-bg-primary py-3"> 
           
-          <div class="col-6 fw-bold">
-            Boolean
+          <div class="order-2 order-md-0 col-md-4 col-lg-6 my-3 my-md-0">
+            
+            <h2>Boolean <span class="badge rounded-pill ac_badge ac_fs-7">Piano blaze</span></h2>
+
+            <span class="badge rounded-pill ac_badge ac_fs-7">3 app</span>
+            <span><i class="fa-solid fa-angles-right align-middle ac_fs-7"></i></span>
+            <span class="badge rounded-pill d-lg-none ac_badge"><i class="fa-solid fa-plus"></i></span>
+            <div class="ac-badges d-none d-lg-inline-block">
+              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean mobile app</span>
+              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean web app</span>
+              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean blog app</span>
+            </div>
+            
+
           </div>
-          <div class="col">
-            Studenti
+
+          <div class="order-3 order-md-0 col-md-4 col-lg-3 my-3 my-md-0">
+
+            <span class="ac_fs-7">Studenti online negli ultimi 30 minuti</span>
+            <h4>125</h4>
           </div>
-          <!-- per la sidebar laterale che appare sulla destra al bottone "nuovo studente" https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
-          <div class="col">
-            nuovo studente
+
+          <div class="order-1 col-md-4 col-lg-3 my-3 my-md-0">
+            
+            <span class="ac_fs-7 mx-md-3">Nuovo studente</span>
+
+            <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body ac_fs-7">
+
+                <form class="row g-3">
+
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control form-control-sm" id="nome">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cognome" class="form-label">Cognome</label>
+                    <input type="text" class="form-control form-control-sm" id="cognome">
+                  </div>
+
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+
+                  <!-- soluzione per la @ che non mi piace  -->
+                  <div class="col-md-6">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-sm" id="Email" placeholder="@">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="Password">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="indirizzo" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control form-control-sm" id="indirizzo" placeholder="Inserisci il tuo indirizzo">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="Città" class="form-label">Città</label>
+                    <input type="text" class="form-control form-control-sm" id="Città">
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="stato" class="form-label">Stato</label>
+                    <select id="stato" class="form-select form-select-sm">
+                      <option selected>Scegli...</option>
+                      <option>Stato 1</option>
+                      <option>Stato 2</option>
+                      <option>Stato 3</option>
+                      <option>Stato 4</option>
+                      <option>Stato 5</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-2">
+                    <label for="CAP" class="form-label">Cap</label>
+                    <input type="text" class="form-control form-control-sm" id="CAP">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Foto</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-sm">Salva</button>
+                    <button type="button" class="btn btn-warning btn-sm">Svuota</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+
           </div>
 
         </div>
 
-        <div class="row righa">
+        
+
+        <div class="row">
 
           <div class="col-xl-8 debug">
             <!-- cercare List group su boostrap  -->

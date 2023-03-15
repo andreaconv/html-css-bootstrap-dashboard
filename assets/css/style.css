@@ -9,6 +9,10 @@
   --height-header: 60px;
 }
 
+.ac_fs-7{
+  font-size: 0.7rem;
+}
+
 header{
   position: fixed;
   z-index: 999;
@@ -50,11 +54,14 @@ main aside{
   overflow-y: auto;
 }
 
-.ac-container .row:first-child{
-  /* debug */
-  height: 100px;
+span.ac_badge{
+  background-color: rgba(0, 0, 0, .3);
+  vertical-align: middle;
 }
 
+.offcanvas {
+  --bs-offcanvas-width: 500px;
+}
 
 
 
