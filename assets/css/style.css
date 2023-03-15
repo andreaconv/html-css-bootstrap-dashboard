@@ -1,10 +1,3 @@
-.debug{
-  /* debug */
-  /* height: 70px; */
-  border: 1px solid black;
-  background-color: rgba(165, 42, 42, 0.226);
-}
-
 :root{
   --height-header: 60px;
 }
