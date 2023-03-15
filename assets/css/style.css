@@ -17,6 +17,10 @@ header{
   height: var(--height-header);
 }
 
+header .ac_icons i:hover{
+  cursor: pointer;
+}
+
 /* MAIN  */
 
 main{
@@ -52,6 +56,11 @@ span.ac_badge{
   background-color: rgba(0, 0, 0, .3);
   vertical-align: middle;
   font-size: 0.7rem;
+}
+
+span.ac_badge:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .offcanvas {
