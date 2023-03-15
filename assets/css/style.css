@@ -57,14 +57,18 @@ main aside{
 span.ac_badge{
   background-color: rgba(0, 0, 0, .3);
   vertical-align: middle;
+  font-size: 0.7rem;
 }
 
 .offcanvas {
   --bs-offcanvas-width: 500px;
 }
 
+table .image{
+  width: 25px;
+}
 
-
+/* MOBILE FIRST  */
 
 /* TABLET  */
 @media all and (max-width:991px){
@@ -74,5 +78,9 @@ span.ac_badge{
 
   main aside{
     width: 50px;
+  }
+  
+  .ac_fs-7{
+    font-size: 1rem;
   }
 }

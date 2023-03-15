@@ -103,32 +103,34 @@
     <div class="ac-container">
 
       <div class="container-fluid">
+
+        <!-- RIGA BLU BOOLEAN  -->
         
         <div class="row text-bg-primary py-3"> 
           
-          <div class="order-2 order-md-0 col-md-4 col-lg-6 my-3 my-md-0">
+          <div class="order-2 order-md-0 col-md-4 col-lg-6 my-2 my-md-0">
             
-            <h2>Boolean <span class="badge rounded-pill ac_badge ac_fs-7">Piano blaze</span></h2>
+            <h2>Boolean <span class="badge rounded-pill ac_badge">Piano blaze</span></h2>
 
-            <span class="badge rounded-pill ac_badge ac_fs-7">3 app</span>
+            <span class="badge rounded-pill ac_badge">3 app</span>
             <span><i class="fa-solid fa-angles-right align-middle ac_fs-7"></i></span>
             <span class="badge rounded-pill d-lg-none ac_badge"><i class="fa-solid fa-plus"></i></span>
             <div class="ac-badges d-none d-lg-inline-block">
-              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean mobile app</span>
-              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean web app</span>
-              <span class="badge rounded-pill ac_badge ac_fs-7">Boolean blog app</span>
+              <span class="badge rounded-pill ac_badge">Boolean mobile app</span>
+              <span class="badge rounded-pill ac_badge">Boolean web app</span>
+              <span class="badge rounded-pill ac_badge">Boolean blog app</span>
             </div>
             
 
           </div>
 
-          <div class="order-3 order-md-0 col-md-4 col-lg-3 my-3 my-md-0">
+          <div class="order-3 order-md-0 col-md-4 col-lg-3 my-2 my-md-0">
 
             <span class="ac_fs-7">Studenti online negli ultimi 30 minuti</span>
             <h4>125</h4>
           </div>
 
-          <div class="order-1 col-md-4 col-lg-3 my-3 my-md-0">
+          <div class="order-1 col-md-4 col-lg-3 my-2 my-md-0">
             
             <span class="ac_fs-7 mx-md-3">Nuovo studente</span>
 
@@ -225,86 +227,190 @@
 
         </div>
 
-        
+        <!-- RIGA CONTENENTE DUE COLONNE CHE CONTENGONO IL CONTENUTO -->
 
         <div class="row">
 
-          <div class="col-xl-8 debug">
+          <!-- COLONNA LARGA  -->
+
+          <div class="col-xl-8 py-3 pe-xl-1">
             <!-- cercare List group su boostrap  -->
 
-            <h2>Prossime classi</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nemo nobis ratione laudantium commodi id cupiditate libero, sit doloremque. Asperiores perspiciatis unde et placeat amet recusandae corrupti nemo voluptate maiores?
-            </p>
+            <!-- PROSSIME CLASSI  -->
+            <h3 class="bg-body-secondary border border-secondary border-bottom-0 rounded-top border-opacity-50 my-0 px-3 pb-3">Prossime classi</h3>
 
-            <h2>F.A.Q.</h2>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Come aggiungere un uovo studente?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Clicca sul + in alto nella sezione blu.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Come posso accedere alle informazioni del mio account?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni totam quasi debitis nam, libero suscipit? Voluptatem consequatur odio doloremque similique quo ducimus ratione, nulla, aut adipisci enim voluptatibus soluta possimus.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Posso usare questa dashboard da mobile?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet veritatis voluptatem, magnam sapiente consectetur vitae. Quas error maiores consequatur consectetur velit qui nam debitis obcaecati excepturi, cupiditate eos atque.
-                  </div>
-                </div>
-              </div>
+            <div class="border border-secondary rounded-bottom border-opacity-50 p-3  mb-3">
+
+              <!-- PROBLEMA: dando il d-block mi rovina le righe della tabella -->
+              <table class="table">
+                <thead>                  
+                  <tr> <!-- RIGA 1 -->                    
+                    <td class="w-50">Nome</td>
+                    <td class="d-none d-md-inline-block">Data inizio</td>
+                    <td class="d-none d-md-inline-block">ROI</td>
+                    <td>Stato</td>
+                    <td>Azioni</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- RIGA 1 -->   
+                  <tr>  
+                    <td>
+                      <div class="image d-inline-block me-1">
+                        <img src="assets/img/class-avatar.jpg" class="img-fluid">
+                      </div>
+                      <span>Classe 75</span>
+                    </td>
+                    <td class="d-none d-md-inline-block">15 Feb 2021</td>
+                    <td class="d-none d-md-inline-block">20%</td>
+                    <td>
+                      <span class="badge text-bg-success align-middle">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-pencil"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
             </div>
+            
+            <!-- F.A.Q.  -->
+            <h3 class="bg-body-secondary border border-secondary border-bottom-0 rounded-top border-opacity-50 my-0 px-3 pb-3">F.A.Q.</h3>
+
+            <div class="border border-secondary rounded-bottom border-opacity-50 p-3  mb-xl-3">
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come aggiungere un uovo studente?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Clicca sul + in alto nella sezione blu.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Come posso accedere alle informazioni del mio account?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni totam quasi debitis nam, libero suscipit? Voluptatem consequatur odio doloremque similique quo ducimus ratione, nulla, aut adipisci enim voluptatibus soluta possimus.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet veritatis voluptatem, magnam sapiente consectetur vitae. Quas error maiores consequatur consectetur velit qui nam debitis obcaecati excepturi, cupiditate eos atque.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
           </div>
 
-          <div class="col-xl-4 debug">
+          <!-- quando lo schermo diventa xl si aggiungono margin e padding ai due elementi in colonna ("F.A.Q." e "Todo") -->
+
+          <!-- COLONNA STRETTA  -->
+
+          <div class="col-xl-4 py-xl-3">
+
+            <!-- TODO  -->
+            <h3 class="bg-body-secondary border border-secondary border-bottom-0 rounded-top border-opacity-50 my-0 px-3 pb-3">Todo</h3>
+
+            <div class="border border-secondary rounded-bottom border-opacity-50 p-3  mb-3">
+
+              <ul class="list-group">
+
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="todo1">
+                    <label class="form-check-label" for="todo1">
+                      Kickoff nuove classi
+                    </label>
+                  </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="todo2">
+                    <label class="form-check-label" for="todo2">
+                      Lezione su Bootstrap 5 in classe #75
+                    </label>
+                  </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="todo3">
+                    <label class="form-check-label" for="todo3">
+                      Controllare username github studenti
+                    </label>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <!-- UTENTI ATTIVI  -->
+            <h3 class="bg-body-secondary border border-secondary border-bottom-0 rounded-top border-opacity-50 my-0 px-3 pb-3">Utenti attivi</h3>
             
-            <h2>Todo</h2>
+            <div class="border border-secondary rounded-bottom border-opacity-50 p-3  mb-3">
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="todo1">
-              <label class="form-check-label" for="todo1">
-                Kickoff nuove classi
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="todo2">
-              <label class="form-check-label" for="todo2">
-                Lezione su Bootstrap 5 in classe #75
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="todo3">
-              <label class="form-check-label" for="todo3">
-                Controllare username github studenti
-              </label>
+              <!-- IMMAGINE  -->
+              <div class="border border-secondary border-bottom-0 rounded-top border-opacity-50 p-3">
+
+                <div class="image mb-3">
+                  <img src="assets/img/stats.jpeg" class="img-fluid">
+                </div>
+
+                <div>
+                  <h5>Utenti attivi</h5>
+                  <span class="ac_fs-7">Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                </div>
+
+              </div>
+              
+              <!-- LISTA MESI  -->
+              <div class="border border-secondary rounded-bottom border-opacity-50">
+
+                <ul class="list-group list-group-flush">
+
+                  <li class="list-group-item">Gennaio: 1200</li>
+                  <li class="list-group-item">Febbraio: 800</li>
+                  <li class="list-group-item">Marzo: 1500</li>
+                  <li class="list-group-item py-3">
+                    <a href="#">Visualizza report approfondito</a>
+                  </li>
+
+                </ul>
+
+              </div>
+
             </div>
 
-            <h2>Utenti attivi</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nemo nobis ratione laudantium commodi id cupiditate libero, sit doloremque. Asperiores perspiciatis unde et placeat amet recusandae corrupti nemo voluptate maiores?
-            </p>
+
           </div>
           
 
