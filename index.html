@@ -9,6 +9,7 @@
   <!-- FONTAWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="icon" href="assets/img/favicon.jpeg">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Dashboard</title>
 </head>
@@ -35,6 +36,7 @@
         </div>
 
         <!-- NAVBAR  -->
+        <!-- PROBLEMA: manca la lente d'ingradimento nella search bar  -->
         <div class="col-10 col-lg-8 d-flex align-self-center">
           <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
         </div>
@@ -44,9 +46,9 @@
 
           <div class="ac_icons d-none d-lg-block text-muted py-3">
             <!-- per allineare verticalmente ho usato il padding  -->
-            <i class="mx-1 fa-solid fa-bars mx-2"></i>
-            <i class="mx-1 fa-solid fa-circle-question mx-2"></i>
-            <i class="mx-1 fa-solid fa-ellipsis-vertical mx-2"></i>
+            <i class="fa-solid fa-bars mx-2"></i>
+            <i class="fa-solid fa-circle-question mx-2"></i>
+            <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
             
           </div>
   
@@ -75,7 +77,7 @@
       
       <div class="container-fluid d-flex flex-column justify-content-between h-100">
 
-        <div class="row flex-column text-white py-2">
+        <div class="row flex-column text-white py-3">
 
           <div class="col mb-3">
             <div class="selezionato py-1 px-1">
@@ -228,7 +230,7 @@
 
                   <div class="col-12">
                     <button type="submit" class="btn btn-primary btn-sm">Salva</button>
-                    <button type="button" class="btn btn-warning btn-sm">Svuota</button>
+                    <button type="reset" class="btn btn-warning btn-sm">Svuota</button>
                   </div>
 
                 </form>
@@ -244,6 +246,8 @@
 
         <div class="row">
 
+          <!-- I 4 GRUPPI SONO CARD DI BOOSTRAP  -->
+
           <!-- COLONNA LARGA  -->
 
           <div class="col-xl-8 py-3 pe-xl-1">
@@ -255,9 +259,11 @@
             <div class="border border-secondary rounded-bottom border-opacity-50 p-3  mb-3">
 
               <!-- PROBLEMA: dando il d-block mi rovina le righe della tabella -->
-              <table class="table">
+              <!-- soluzione: alle tabelle non si da il "d-block" ma il "d-table-cell"  -->
+              <table class="table table-hover">
                 <thead>                  
-                  <tr> <!-- RIGA 1 -->                    
+                  <tr> <!-- RIGA 1 -->      
+                    <!-- Dagli screen i titoli della prima riga mi sembravano come le righe invece sono in grassetto quindi posso usare i tag del thead                -->
                     <td class="w-50">Nome</td>
                     <td class="d-none d-md-table-cell">Data inizio</td>
                     <td class="d-none d-md-table-cell">ROI</td>

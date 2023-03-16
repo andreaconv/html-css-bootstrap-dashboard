@@ -9,10 +9,10 @@
 /* HEADER  */
 
 header{
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
+  /* position: fixed; */
+  /* z-index: 999; */
+  /* top: 0; */
+  /* right: 0; */
   width: 100%;
   height: var(--height-header);
 }
@@ -25,11 +25,15 @@ header .ac_icons i:hover{
 
 main{
   height: calc(100vh - var(--height-header));
-  margin-top: var(--height-header);
+  /* margin-top: var(--height-header); */
   display: flex;
 }
 
 /* ASIDE SIDEBAR  */
+
+/* vedere la correzione per capire meglio come funziona shrink e grow  */
+
+/* carina la soluzione usata con pading interni e d-none alle icone per centrare tutto senza usare la media query  */
 
 main aside{
   flex-shrink: 0;
@@ -45,6 +49,8 @@ main aside .selezionato:hover{
 }
 
 /* CONRAINER CENTRALE  */
+
+/* flex-grow: 1; */
 
 .ac-container{
   width: 100%;
